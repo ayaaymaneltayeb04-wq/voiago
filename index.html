@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiago Travel Platform</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 90%; margin: auto; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #1B4FD8; color: white; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        .hero { background-image: url('hero.jpg'); height: 400px; background-size: cover; display: flex; align-items: center; justify-content: center; position: relative; }
+        .search-bar { padding: 15px; width: 300px; }
+        .cta-buttons { margin-top: 20px; }
+        .service-card { border: 1px solid #ccc; padding: 15px; margin: 10px; text-align: center; }
+        .stats { display: flex; justify-content: space-around; margin: 20px 0; }
+        .destinations { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .app-download { display: flex; align-items: center; }
+        .footer { background: #f1f1f1; padding: 15px; text-align: center; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Voiago</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language-toggle">
+            <button onclick="switchLanguage('EN')">EN</button>
+            <button onclick="switchLanguage('AR')">AR</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div>
+            <input type="text" class="search-bar" placeholder="Where do you want to go?">
+            <div class="cta-buttons">
+                <button>Search</button>
+                <button>Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <!-- Repeat for 8 services -->
+                <div class="service-card">Service 1</div>
+                <div class="service-card">Service 2</div>
+                <div class="service-card">Service 3</div>
+                <div class="service-card">Service 4</div>
+                <div class="service-card">Service 5</div>
+                <div class="service-card">Service 6</div>
+                <div class="service-card">Service 7</div>
+                <div class="service-card">Service 8</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-voiago">
+        <h2>Why Voiago?</h2>
+        <div class="stats">
+            <div>1000+ Destinations</div>
+            <div>24/7 Support</div>
+            <div>Best Price Guarantee</div>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="filter">
+            <input type="text" placeholder="Filter destinations...">
+        </div>
+        <div class="destination-gallery">
+            <!-- Destination cards here -->
+        </div>
+    </section>
+
+    <section class="app-download">
+        <h2>Download Our App</h2>
+        <div>
+            <img src="phone-mockup.png" alt="Phone Mockup">
+            <img src="qr-code.png" alt="QR Code">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What our customers say</h2>
+        <div class="carousel">
+            <!-- Testimonial items here -->
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <!-- Partner logos here -->
+    </section>
+
+    <nav class="bottom-navigation">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+    <footer>
+        <p>Contact us at <a href="mailto:info@voiago.com">info@voiago.com</a></p>
+        <p>&copy; 2026 Voiago. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Language switching logic here
+        }
+        function toggleMobileMenu() {
+            // Mobile menu toggle logic here
+        }
+        function initCarousel() {
+            // Testimonial carousel initialization logic here
+        }
+        window.onload = function() {
+            initCarousel();
+        };
+        // Scroll reveal animations and parallax effect logic here
+    </script>
+</body>
+</html>
